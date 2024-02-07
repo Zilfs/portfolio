@@ -105,6 +105,36 @@ strong {
   color: #219ebc;
 }
 
+.stack-icon {
+  text-decoration: none;
+  color: #5b5b5b;
+  transition: all ease-in-out 0.3s;
+}
+
+.laravel-icon:hover {
+  color: #fb503b;
+  transform: scale(1.5);
+}
+
+.vuejs-icon:hover {
+  color: #42b883;
+  transform: scale(1.5);
+}
+
+.bootstrap-icon:hover {
+  color: #712cf9;
+  transform: scale(1.5);
+}
+
+.construct-3-icon {
+  width: 20px;
+  transition: all ease-in-out 0.3s;
+}
+
+.construct-3-icon:hover {
+  transform: scale(1.5);
+}
+
 .custom-btn.custom-btn-bg {
   background: #474559;
   color: #ffffff;
