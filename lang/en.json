@@ -1,0 +1,11 @@
+{
+    "about-me": "Fresh graduate from prestasi prima vocational high school, majoring in software engineering. and now focusing on learning and developing website applications, I am used to using laravel in developing my website projects.",
+    "projects-title": "Some of things that I've been made",
+    "project-1-desc": "Is an innovative marketplace application that connects sellers and buyers in one practical and efficient platform. With a variety of features, one of which is a payment method through a 3rd party payment gateway application, <a href=\"https://midtrans.com/\">midtrans</a>. So that it can provide convenience and security for users when making transactions.",
+    "project-2-desc": "Siakad is an application that provides student attendance services at a school, with a statistical feature in the form of a diagram, which shows the percentage of student attendance. This application is designed to simplify and provide effective solutions in student attendance management.",
+    "project-3-desc": "Game Smart TK, is the result of our collaboration with PT. Bangun Satya Wacana and Diginusa when we were still interning there. In this game there are several games such as matching objects and so on. This game is designed to provide education to kindergarten children.",
+    "educations-title": "Educations",
+    "education-1": "Prestai Prima Vocational High School",
+    "experience-title": "Experience",
+    "experience-1": "Internship at PT. Bangun Satya Wacana"
+}
