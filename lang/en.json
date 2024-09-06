@@ -1,13 +1,13 @@
 {
-    "about-me": "Currently still studying at Jakarta \"Veterans\" National Development University, majoring in software engineering. and currently still continuing to develop my skills in the field of web application development and also mobile app development. in making website application projects, I'am used to using laravel. I'am quite experienced with the use of laravel in web application development so i'am able to build efficient applications :)",
+    "about-me": "Currently still studying at Jakarta \"Veterans\" National Development University, majoring in software engineering. and currently still continuing to develop my skills in the field of web application development and also mobile app development. in making website application projects, I'am used to using laravel. I'am quite experienced with the use of laravel in web application development so i'am able to build an efficient applications :)",
     "projects-title": "Some of things that I've been made",
     "project-1-desc": "Is an innovative marketplace application that connects sellers and buyers in one practical and efficient platform. With a variety of features, one of which is a payment method through a 3rd party payment gateway application, <a href=\"https://midtrans.com/\">midtrans</a>. So that it can provide convenience and security for users when making transactions.",
     "project-2-desc": "Siakad is an application that provides student attendance services at a school, with a statistical feature in the form of a diagram, which shows the percentage of student attendance. This application is designed to simplify and provide effective solutions in student attendance management.",
-    "project-3-desc": "Game Smart TK, is the result of our collaboration with PT. Bangun Satya Wacana and Diginusa when we were still interning there. In this game there are several games such as matching objects and so on. This game is designed to provide education to kindergarten children.",
+    "project-3-desc": "Game Smart TK, is the result of our collaboration with Diginusa Kompas Gramedia and Diginusa when we were still interning there. In this game there are several games such as matching objects and so on. This game is designed to provide education to kindergarten children.",
     "educations-title": "Educations",
     "education-1": "Prestai Prima Vocational High School",
     "education-2": "Jakarta \"Veterans\" National Development University",
     "current-year-of-education": "2024 - Present",
     "experience-title": "Experience",
-    "experience-1": "Internship at PT. Bangun Satya Wacana"
+    "experience-1": "Internship at Diginusa Kompas Gramedia"
 }
