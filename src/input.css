@@ -136,7 +136,7 @@
 
 @layer components {
   .line {
-    @apply h-[1px] bg-white w-4/5;
+    @apply h-[1px] bg-white w-4/5 my-2;
   }
   .btn-primary {
     @apply py-3 border-white rounded-full border-2 flex items-center justify-center text-lg font-medium hover:backdrop-blur hover:bg-black hover:bg-opacity-50 hover:scale-110 transition-all ease-in-out duration-500;
