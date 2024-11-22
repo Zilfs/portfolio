@@ -17,8 +17,81 @@
   @apply rounded-full bg-slate-700 hover:bg-purple-950  transition-all ease-in-out duration-300;
 }
 
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animated-cursor-1 {
+  0% {
+    transform: translate(250px, 0);
+  }
+  50% {
+    transform: translate(-250px, 0);
+    opacity: 20%;
+  }
+  100% {
+    transform: translate(250px, 0);
+  }
+}
+@keyframes animated-cursor-2 {
+  0% {
+    transform: translate(-250px, 0);
+  }
+  50% {
+    transform: translate(250px, 0);
+    opacity: 20%;
+  }
+  100% {
+    transform: translate(-250px, 0);
+  }
+}
+@keyframes animated-cursor-3 {
+  0% {
+    transform: translate(0, 250px);
+  }
+  50% {
+    transform: translate(0, -250px);
+    opacity: 20%;
+  }
+  100% {
+    transform: translate(0, 250px);
+  }
+}
+@keyframes animated-cursor-4 {
+  0% {
+    transform: translate(0, -250px);
+  }
+  50% {
+    transform: translate(0, 250px);
+    opacity: 20%;
+  }
+  100% {
+    transform: translate(0, -250px);
+  }
+}
+
 .cursor {
-  @apply absolute w-24 h-24 bg-gradient-to-r from-cyan-200 to-blue-500 opacity-50 rounded-full blur-md transition-all ease-out;
+  /* animation: rotation 10s linear infinite; */
+  :nth-child(1) {
+    animation: animated-cursor-1 15s ease infinite;
+  }
+  :nth-child(2) {
+    animation: animated-cursor-2 10s ease infinite;
+  }
+  :nth-child(3) {
+    animation: animated-cursor-3 10s ease infinite;
+  }
+  :nth-child(4) {
+    animation: animated-cursor-4 15s ease infinite;
+  }
+}
+.animated-cursor {
+  @apply absolute w-[600px] h-[600px] opacity-10 rounded-full blur-3xl transition-all ease-out overflow-hidden;
 }
 
 @layer components {

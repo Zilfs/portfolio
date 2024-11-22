@@ -17,9 +17,13 @@
   </style>
 </head>
 
-<body class="leading-normal tracking-normal text-gray-50 m-3 lg:m-6 bg-cover bg-fixed"
-  style="background-image: url('assets/images/background.png');">
-  <div class="cursor -z-10"></div>
+<body class="leading-normal tracking-normal text-gray-50 m-3 lg:m-6 bg-dark overflow-x-hidden">
+  <div class="cursor -z-10 absolute ease-out duration-[3000] transition-all">
+    <div class="animated-cursor bg-gradient-to-r from-green-500 via-sky-300  to-blue-600"></div>
+    <div class="animated-cursor bg-gradient-to-r from-cyan-300 to-blue-800"></div>
+    <div class="animated-cursor bg-gradient-to-r from-sky-600 to-yellow-200"></div>
+    <div class="animated-cursor bg-gradient-to-r from-cyan-200 via-green-300 to-blue-600"></div>
+  </div>
   <div class="h-full z-20">
     <!--Nav-->
     <div class="w-full container mx-auto">
@@ -38,7 +42,7 @@
     <!--Main-->
     <div class="container pt-24 mx-auto flex flex-wrap flex-col md:flex-row items-center">
       <!-- About Me Section -->
-      <div class="grid grid-cols-1 lg:grid-cols-2 dark-blur-card items-center mb-16">
+      <div class="grid grid-cols-1 lg:grid-cols-2 items-center mb-16">
         <!--Left Col-->
         <div class="flex flex-col justify-center items-start overflow-y-hidden p-4 lg:p-8">
           <h1 class="my-4 text-2xl md:text-4xl text-gray-50 font-bold leading-tight text-center md:text-left">
@@ -46,6 +50,11 @@
               Sup fellows
             </span>
             , I'm Hirzi👋
+          </h1>
+          <h1 class="my-4 text-2xl md:text-4xl text-gray-50 font-bold leading-tight text-center md:text-left">
+            <span class="bg-clip-text text-transparent bg-gradient-to-r from-sky-200  to-blue-400">
+
+            </span>
           </h1>
           <p class="leading-normal text-base mb-8 text-left">
             Currently still studying at Jakarta "Veterans" National Development University, majoring in software
@@ -90,8 +99,8 @@
             class="mx-auto w-full md:w-4/5 transform -rotate-6 transition hover:scale-105 duration-700 ease-in-out hover:rotate-6"
             src="assets/images/undraw/undraw_programming_re_kg9v.svg" /> -->
 
-          <spline-viewer hint loading-anim-type="spinner-small-light"
-            url="https://prod.spline.design/VAV2sLpCXSN3t9Vv/scene.splinecode"></spline-viewer>
+          <!-- <spline-viewer hint loading-anim-type="spinner-small-light"
+            url="https://prod.spline.design/VAV2sLpCXSN3t9Vv/scene.splinecode"></spline-viewer> -->
 
         </div>
       </div>
