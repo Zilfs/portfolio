@@ -9,7 +9,7 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  @apply bg-black bg-opacity-85;
+  @apply bg-transparent bg-opacity-100;
 }
 
 /* Handle */
@@ -84,9 +84,62 @@
   @apply absolute w-[600px] h-[600px] opacity-10 rounded-full blur-3xl transition-all ease-out overflow-hidden;
 }
 
+.animated-item {
+  display: block;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  animation: BottomTotop 12s linear infinite 0s;
+}
+
+.animated-item:nth-child(2) {
+  animation-delay: 4s;
+}
+
+.animated-item:nth-child(3) {
+  animation-delay: 8s;
+}
+
+@keyframes BottomTotop {
+  0% {
+    opacity: 0;
+  }
+
+  5% {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+
+  10% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
+  25% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
+  30% {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+
+  80% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
 @layer components {
+  .line {
+    @apply h-[1px] bg-white w-4/5;
+  }
   .btn-primary {
-    @apply bg-purple-800 hover:bg-purple-600 text-white font-bold py-2 px-4 rounded-lg hover:scale-105 duration-300 ease-in-out text-center;
+    @apply py-3 border-white rounded-full border-2 flex items-center justify-center text-lg font-medium hover:backdrop-blur hover:bg-black hover:bg-opacity-50 hover:scale-110 transition-all ease-in-out duration-500;
   }
   .btn-secondary {
     @apply bg-gray-200 hover:bg-white text-purple-800 font-bold py-2 px-4 rounded-lg hover:scale-105 duration-300 ease-in-out text-center;
