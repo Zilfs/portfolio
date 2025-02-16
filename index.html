@@ -19,8 +19,37 @@
     @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
   </style>
 
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init({
+        publicKey: "gi1kmIRHYrzaqRaEp",
+      });
+    })();
+  </script>
+  <script type="text/javascript">
+    window.onload = function () {
+      document.getElementById('contact-form').addEventListener('submit', function (event) {
+        event.preventDefault();
+        var params = {
+          sender_name: document.getElementById("senderName").value,
+          sender_email: document.getElementById("senderEmail").value,
+          subject: document.getElementById("subject").value,
+          message: document.getElementById("messageSend").value,
+        };
+        emailjs.send('service_an5365w', 'template_m7b39vg', params)
+          .then(() => {
+            console.log('SUCCESS!');
+          }, (error) => {
+            console.log('FAILED...', error);
+          });
+      });
+    }
+  </script>
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.68/build/spline-viewer.js"></script>
   <script src="./src/jquery-3.7.1.min.js"></script>
   <script src="./src/cursor.js"></script>
+
 </head>
 
 <body class="leading-normal tracking-normal text-white bg-dark overflow-x-hidden">
@@ -205,7 +234,7 @@
               modern design</p>
             <div class="flex flex-col w-full mt-16 px-5">
               <p class="font-semibold my-2 text-lg">Abilities</p>
-              <div class="flex w-full my-2 align-middle font-normal text-sm text-white py-2 ">
+              <div class="flex flex-wrap w-full my-2 align-middle font-normal text-sm text-white py-2 ">
                 <div class="flex flex-col items-center group transition-all ease-linear">
                   <div class="flex">
                     <p class="text-white">
@@ -267,7 +296,7 @@
               technologies and efficient</p>
             <div class="flex flex-col w-full mt-16 px-5">
               <p class="font-semibold my-2 text-lg">Abilities</p>
-              <div class="flex w-full my-2 align-middle font-normal text-sm text-white py-2 ">
+              <div class="flex flex-wrap w-full my-2 align-middle font-normal text-sm text-white py-2 ">
                 <div class="flex flex-col items-center group transition-all ease-linear">
                   <div class="flex">
                     <p class="text-white">
@@ -307,10 +336,57 @@
       </div>
     </div>
 
+    <!-- Contact section -->
+    <div class="flex flex-col w-full align-middle justify-center items-center">
+      <h1
+        class="my-4 text-2xl text-white font-semibold leading-tight text-center-hover:text-3xl transition-all ease duration-500"
+        data-aos="fade-down" data-aos-duration="1000">
+        Contact
+      </h1>
+      <div class="line w-1/5" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="100"></div>
+      <div class="grid grid-cols-1 gap-5 lg:grid-cols-2 my-24 group px-3 lg:px-14">
+        <div class="container" data-aos="fade-right" data-aos-duration="1000">
+          <spline-viewer hint loading-anim-type="spinner-small-light"
+            url="https://prod.spline.design/fqJAY502mo1f4XbX/scene.splinecode"></spline-viewer>
+        </div>
+        <div class="flex flex-col w-full bg-dark bg-opacity-70 backdrop-blur-3xl rounded-lg px-10 py-8"
+          data-aos="fade-left" data-aos-duration="1000">
+          <p class="text-2xl lg:text-4xl font-bold">Lets talk</p>
+          <div class="flex flex-row h-10 align-middle items-center my-4"><i class="fa-solid fa-envelope me-2"></i>
+            <p class="text-white">hirzi.dev@gmail.com</p>
+          </div>
+          <div class="flex w-full flex-col">
+            <form id="contact-form" class="flex flex-col w-full">
+              <input type="hidden" name="contact_number" value="697483">
+              <div class="grid grid-cols-1 gap-x-5 lg:grid-cols-2">
+                <div class="w-full my-2">
+                  <input type="text" name="user_name" id="senderName" placeholder="Your full name" required
+                    class="w-full h-12 bg-transparent placeholder:text-slate-400 text-white text-sm border border-slate-200 rounded-md px-3 my-1 pb-2 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-300 shadow-sm focus:shadow">
+                </div>
+                <div class="w-full my-2"> <input type="email" name="user_email" id="senderEmail"
+                    placeholder="Your email" required
+                    class="w-full h-12 bg-transparent placeholder:text-slate-400 text-white text-sm border border-slate-200 rounded-md px-3 my-1 pb-2 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-300 shadow-sm focus:shadow">
+                </div>
+              </div>
+              <div class="w-full my-2"> <input type="text" name="subject" id="subject" placeholder="Subject" required
+                  class="w-full h-12 bg-transparent placeholder:text-slate-400 text-white text-sm border border-slate-200 rounded-md px-3 my-1 pb-2 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-300 shadow-sm focus:shadow">
+              </div>
+              <div class="w-full my-2"><textarea name="message" id="messageSend"
+                  class="w-full h-24 bg-transparent placeholder:text-slate-400 text-white text-sm border border-slate-200 rounded-md px-3 my-1 pb-2 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-300 shadow-sm focus:shadow"
+                  placeholder="Your message" required></textarea></div>
+              <button type="submit" value="Send" class="w-full h-12 mt-1 mb-24rounded-md bg-[#229ebd]">Send</button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
 
     <!--Footer-->
-    <div class="w-full mt-28 pt-16 pb-6 text-sm text-center md:text-left fade-in z-10 bottom-0">
-      <p class="text-gray-500 no-underline hover:no-underline" href="#">Copyright &copy; 2024. All rights reserved
+    <div class="flex flex-wrap w-full ps-14 mt-28 pt-16 pb-6 text-sm text-center md:text-left fade-in z-10 bottom-0">
+      <p class="text-gray-500 no-underline hover:no-underline" href="#">Copyright &copy; 2025. All rights reserved
         -
         App Made by HAR
       </p>
@@ -318,6 +394,7 @@
     </div>
   </div>
   </div>
+
 
   <script src="assets/aos-master/dist/aos.js"></script>
   <script>
