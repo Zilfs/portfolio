@@ -1,331 +1,405 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Hirzi's Portfolio</title>
-  <link rel="shortcut icon" href="images/icon.svg" type="image/x-icon">
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
 
-  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/unicons.css">
-  <link rel="stylesheet" href="css/owl.carousel.min.css">
-  <link rel="stylesheet" href="css/owl.theme.default.min.css">
-  <link rel="stylesheet" href="fontawesome/css/all.min.css">
+  <link rel="shortcut icon" href="assets/images/background.png" type="image/x-icon">
 
-  <!-- MAIN STYLE -->
-  <link rel="stylesheet" href="css/tooplate-style.css">
-</head>
+  <link rel="stylesheet" href="src/output.css" />
+  <link rel="stylesheet" href="assets/icons/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="assets//aos-master/dist/aos.css">
 
-<body>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+  </style>
 
-  <!-- MENU -->
-  <nav class="navbar navbar-expand-sm navbar-light">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">Hirzi's Portfolio</a>
-
-      <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        <span class="navbar-toggler-icon"></span>
-        <span class="navbar-toggler-icon"></span>
-      </button> -->
-
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav mx-auto">
-          <li class="nav-item">
-            <a href="#about" class="nav-link"><span data-hover="About">About</span></a>
-          </li>
-          <li class="nav-item">
-            <a href="#project" class="nav-link"><span data-hover="Projects">Projects</span></a>
-          </li>
-          <!-- <li class="nav-item">
-            <a href="#resume" class="nav-link"><span data-hover="Resume">Resume</span></a>
-          </li> -->
-          <li class="nav-item">
-            <a href="#contact" class="nav-link"><span data-hover="Contact">Contact</span></a>
-          </li>
-        </ul>
-
-        <!-- <ul class="navbar-nav ml-lg-auto">
-          <div class="ml-lg-4">
-            <div class="color-mode d-lg-flex justify-content-center align-items-center">
-              <i class="color-mode-icon"></i>
-              Color mode
-            </div>
-          </div>
-        </ul> -->
-      </div>
-    </div>
-  </nav>
-  <div class="container">
-    <div class="row">
-      <div class="col-12 justify-content-start">
-        <a href="#" onclick="changeLanguage('id'); return false;" class="text-secondary">
-          <i class="fa-solid fa-language me-2"></i>IDN / ENG
-        </a>
-      </div>
-    </div>
-  </div>
-  <!-- ABOUT -->
-  <section class="about full-screen d-lg-flex justify-content-center align-items-center flex-column" id="about">
-
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-7 col-md-12 col-12 d-flex align-items-center">
-          <div class="about-text">
-            <small class="small-text">Welcome to <span class="mobile-block">my portfolio website!</span></small>
-            <h1 class="animated animated-text">
-              <span class="mr-2">Sup fellows, I'm Hirzi</span>
-              <div class="animated-info w-100">
-                <span class="animated-item">Junior Programmer</span>
-                <span class="animated-item">Web Developer</span>
-                <span class="animated-item">Student :v</span>
-              </div>
-            </h1>
-
-            <p data-translate="about-me"></p>
-
-            <div class="custom-btn-group mt-4">
-              <a href="https://github.com/Zilfs" target="_blank" class="btn mr-lg-2 custom-btn"><i
-                  class='fa-brands fa-github'></i> Check out my github</a>
-              <a href="https://www.linkedin.com/in/hirzi-ahnaf/" target="_blank"
-                class="btn custom-btn custom-btn-bg custom-btn-link"><i class="fa-brands fa-linkedin"></i> Linked-in</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-5 col-md-12 col-12">
-          <div class="about-image svg">
-            <img src="images/undraw/undraw_programming_re_kg9v.svg" class="img-fluid" alt="svg image">
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- PROJECTS -->
-  <section class="project py-5" id="project">
-    <div class="container">
-
-      <div class="row">
-        <div class="col-12 text-center mb-4">
-          <h2 data-translate="projects-title"></h2>
-        </div>
-        <div class="col-12 text-center">
-          <h4>#<span style="color: #219ebc;">Dev</span>Journey</h4>
-        </div>
-        <div class="col-12 col-lg-4 my-4">
-          <div class="card shadow-sm w-100 d-flex flex-column h-100">
-            <div class="d-flex w-100 justify-content-center px-3 py-3">
-              <img src="images/project-1.png" class="w-100 shadow rounded" alt="" srcset="">
-            </div>
-            <div class="px-3 mt-2 d-flex h-100 flex-column">
-              <h5>Market place app</h5>
-              <div class="d-flex h-100 flex-column">
-                <p class="fw-semibold">Build with : Laravel 10, VueJS, Bootstrap</p>
-                <p class="fs-6 h-100" data-translate="project-1-desc"></p>
-              </div>
-            </div>
-            <div class="py-4 d-flex w-100 justify-content-center bottom-0">
-              <a href="https://laravel.com/" target="_blank" class="stack-icon mx-3"><i
-                  class="fab fa-laravel fa-lg stack-icon laravel-icon"></i></a>
-              <a href="https://vuejs.org/" target="_blank" class="stack-icon mx-3"><i
-                  class="fa-brands fa-vuejs fa-lg stack-icon vuejs-icon"></i></a>
-              <a href="https://getbootstrap.com/" target="_blank" class="stack-icon mx-3"><i
-                  class="fa-brands fa-bootstrap fa-lg stack-icon bootstrap-icon"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-lg-4 my-4">
-          <div class="card shadow-sm w-100 d-flex flex-column h-100">
-            <div class="d-flex w-100 justify-content-center px-3 py-3">
-              <img src="images/project-2.png" class="w-100 shadow rounded" alt="" srcset="">
-            </div>
-            <div class="px-3 mt-2 d-flex h-100 flex-column">
-              <h5>Siakad</h5>
-              <div class="d-flex h-100 flex-column">
-                <p class="fw-semibold">Build with : Laravel 10, Bootstrap</p>
-                <p class="fs-6 h-100" data-translate="project-2-desc">
-                </p>
-              </div>
-            </div>
-            <div class="py-4 d-flex w-100 justify-content-center bottom-0">
-              <a href="https://laravel.com/" target="_blank" class="stack-icon mx-3"><i
-                  class="fab fa-laravel fa-lg stack-icon laravel-icon"></i></a>
-              <a href="https://getbootstrap.com/" target="_blank" class="stack-icon mx-3"><i
-                  class="fa-brands fa-bootstrap fa-lg stack-icon bootstrap-icon"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-lg-4 my-4">
-          <div class="card shadow-sm w-100 d-flex flex-column h-100">
-            <div class="d-flex w-100 justify-content-center px-3 py-3">
-              <img src="images/project-3.png" class="w-100 shadow rounded" alt="" srcset="">
-            </div>
-            <div class="px-3 mt-2 d-flex h-100 flex-column">
-              <h5>Game Smart TK</h5>
-              <div class="d-flex h-100 flex-column">
-                <p class="fw-semibold">Build with : Construct 2</p>
-                <p class="fs-6 h-100" data-translate="project-3-desc"></p>
-              </div>
-            </div>
-            <div class="py-4 d-flex w-100 justify-content-center bottom-0">
-              <a href="https://www.construct.net/en" target="_blank" class="stack-icon mx-3"><img
-                  src="images/construct-3.png" alt="" srcset="" class="construct-3-icon"></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="d-flex w-100 justify-content-center mt-5">
-        <a href="https://github.com/Zilfs" target="_blank" class="btn custom-btn custom-btn-bg custom-btn-link">See
-          more
-          on my github</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FEATURES -->
-  <section class="resume py-5 d-lg-flex justify-content-center align-items-center" id="resume">
-    <div class="container">
-      <div class="row">
-
-        <div class="col-lg-6 col-12 px-4">
-          <h2 class="mb-4 mobile-mt-2" style="color: #219ebc;" data-translate="educations-title"></h2>
-
-          <div class="d-flex flex-column">
-            <h4 class="row mb-4"><span class="col-12 col-md-9" data-translate="education-1"></span>
-              <p class="text-xs col-12 col-md-3">2021 -
-                2024</p>
-            </h4>
-
-
-            <h4 class="row"><span class="col-12 col-md-9" data-translate="education-2"></span>
-              <p class="text-xs col-12 col-md-3" data-translate="current-year-of-education"></p>
-            </h4>
-
-
-            <!-- <p>Please tell your friends about Tooplate website. That would be very helpful. We need your support.
-            </p> -->
-          </div>
-        </div>
-
-        <div class="col-lg-6 col-12 px-4">
-          <h2 class="mb-4 mobile-mt-2" style="color: #219ebc;" data-translate="experience-title"> Experience
-          </h2>
-
-          <div class="d-flex flex-column">
-            <h4 class="row"><span class="col-12 col-md-9" data-translate="experience-1">Internship at PT. Bangun Satya
-                Wacana</span>
-              <p class="text-xs col-12 col-md-3">2023</p>
-            </h4>
-
-            <!-- <p>Please tell your friends about Tooplate website. That would be very helpful. We need your support.
-            </p> -->
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section class="contact py-5" id="contact">
-    <div class="container">
-      <div class="row">
-
-        <div class="col-12 col-md-6 my-3">
-          <div class="d-flex w-100 justify-content-center">
-            <img src="images/undraw/undraw_personal_email_re_4lx7.svg" class="w-75" alt="" srcset="">
-          </div>
-        </div>
-        <div class="col-12 col-md-6 d-flex flex-column my-3 justify-content-center ps-5">
-          <div class="d-flex">
-            <h2>Let's talk</h2><i class="fa-solid fa-comments fa-lg" style="color: #219ebc;"></i>
-          </div>
-          <div class="d-flex align-items-center my-2"><i class="fa-solid fa-envelope me-3"></i>hirzi.rapiyadi@gmail.com
-          </div>
-          <div class="d-flex align-items-center my-2"><i class="fa-solid fa-phone me-3"></i>+62 813-9800-2261
-          </div>
-          <div class="d-flex align-items-center my-2"><i class="fa-brands fa-linkedin me-3"></i><a
-              href="https://www.linkedin.com/in/hirzi-ahnaf/" target="_blank" style="text-decoration: none;"
-              class="text-black">Linked-in</a>
-          </div>
-          <div class="d-flex align-items-center my-2"><i class="fa-brands fa-github me-3"></i><a
-              href="https://github.com/Zilfs" target="_blank" style="text-decoration: none;"
-              class="text-black">Github</a></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer py-5">
-    <div class="container">
-      <div class="row">
-
-        <div class="col-lg-12 col-12">
-          <p class="copyright-text text-center">Copyright &copy; 2024. All rights reserved</p>
-        </div>
-
-      </div>
-    </div>
-  </footer>
-  <script>
-    let currentLanguage = 'en'; // Default language
-    let translations = {};
-
-    function loadLanguage() {
-      fetch(`lang/${currentLanguage}.json`)
-        .then(response => response.json())
-        .then(data => {
-          console.log('Loaded language data:', data); // Debugging line
-          translations = data;
-          applyTranslations();
-        })
-        .catch(error => console.error('Error loading language file:', error));
-    }
-
-    function applyTranslations() {
-      const elements = document.querySelectorAll('[data-translate]');
-
-      elements.forEach(element => {
-        const key = element.getAttribute('data-translate');
-        if (translations[key]) {
-          element.innerHTML = translations[key];
-        } else {
-          console.warn(`Translation not found for key: ${key}`);
-        }
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init({
+        publicKey: "gi1kmIRHYrzaqRaEp",
+      });
+    })();
+  </script>
+  <script type="text/javascript">
+    window.onload = function () {
+      document.getElementById('contact-form').addEventListener('submit', function (event) {
+        event.preventDefault();
+        var params = {
+          sender_name: document.getElementById("senderName").value,
+          sender_email: document.getElementById("senderEmail").value,
+          subject: document.getElementById("subject").value,
+          message: document.getElementById("messageSend").value,
+        };
+        emailjs.send('service_an5365w', 'template_m7b39vg', params)
+          .then(() => {
+            console.log('SUCCESS!');
+          }, (error) => {
+            console.log('FAILED...', error);
+          });
       });
     }
-
-
-    function changeLanguage(language) {
-      if (currentLanguage == 'id') {
-        language = 'en'
-      }
-      currentLanguage = language;
-      loadLanguage();
-    }
-
-    // Initial load
-    loadLanguage();
   </script>
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.68/build/spline-viewer.js"></script>
+  <script src="./src/jquery-3.7.1.min.js"></script>
+  <script src="./src/cursor.js"></script>
 
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="bootstrap/js/bootstrap.min.js"></script>
-  <script src="js/Headroom.js"></script>
-  <script src="js/jQuery.headroom.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/smoothscroll.js"></script>
-  <script src="js/custom.js"></script>
+</head>
+
+<body class="leading-normal tracking-normal text-white bg-dark overflow-x-hidden">
+
+  <div class="cursor-space w-screen h-screen fixed -z-20">
+    <div class="cursor absolute ease-out duration-[3000] transition-all">
+      <div class="animated-cursor bg-gradient-to-r from-green-500 via-purple-300  to-blue-600"></div>
+      <div class="animated-cursor bg-gradient-to-r from-cyan-300 to-blue-800"></div>
+      <div class="animated-cursor bg-gradient-to-r from-sky-600 to-yellow-200"></div>
+      <div class="animated-cursor bg-gradient-to-r from-cyan-200 via-green-300 to-blue-600"></div>
+    </div>
+  </div>
 
 
+  <div class="z-20">
+    <!--Nav-->
+    <div class="w-screen flex top-0 p-4 lg:p-8">
+      <div class="w-full flex justify-between">
+        <a class="flex text-white no-underline hover:no-underline text-xl lg:text-3xl font-medium lg:ms-12 transition-all ease-in-out"
+          href="#">
+          Hirzi's portfolio
+        </a>
+
+      </div>
+    </div>
+
+    <!--Main-->
+    <div class="container mx-auto flex flex-wrap flex-col md:flex-row items-center">
+      <!-- Landing Section -->
+      <div class="container items-center my-24">
+        <div class="flex flex-col justify-center items-center overflow-y-hidden p-4 lg:p-8">
+          <h1 class="my-4 text-xl md:text-2xl text-white leading-tight text-center" data-aos="fade-down"
+            data-aos-duration="1000">
+            <span class="bg-clip-text text-transparent bg-gradient-to-r from-sky-200  to-blue-400">
+              Sup fellows
+            </span>
+            , I'm Hirzi👋
+          </h1>
+          <div class="flex flex-col w-full items-center">
+            <div class="flex flex-row w-full items-center align-middle justify-center my-4 py-auto mb-20"
+              data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">
+              <div class="line w-1/4"> </div>
+              <div
+                class="flex flex-row relative w-2/5 mx-4 my-8 justify-center align-middle items-center text-4xl md:text-6xl text-white font-bold leading-tight text-center">
+                <p class="animated-item text-center">Junior
+                  developer</p>
+                <p class="animated-item text-center">Web
+                  developer</p>
+                <p class="animated-item text-center">Student :)</p>
+              </div>
+              <div class="line w-1/4"></div>
+            </div>
+            <div class="flex" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="400">
+              <a href="https://www.linkedin.com/in/hirzi-ahnaf/" target="_blank" class="w-[200px] btn-primary">
+                <i class="fa-brands fa-linkedin me-2"></i>
+                Linked-In</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <!-- About Me Section -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 my-24 group">
+        <div class="flex flex-col px-4" data-aos="fade-right" data-aos-duration="1000">
+          <p class="text-2xl font-semibold group-hover:text-3xl transition-all ease duration-500">About Me</p>
+          <div class="line"></div>
+          <p class="text-3xl font-light text-left">Experienced in creating web apps with Laravel for seamless app
+            development</p>
+        </div>
+        <p class="leading-normal text-left mt-14 px-4" data-aos="fade-left" data-aos-duration="1000">
+          Currently still studying at Jakarta "Veterans" National Development University, majoring in software
+          engineering. and currently still continuing to develop my skills in the field of web application development
+          and also mobile app development. in making website application projects, I'am used to using laravel. I'am
+          quite experienced with the use of laravel in web application development so i'am able to build an efficient
+          applications :)
+        </p>
+      </div>
+
+
+      <!-- Projects Section -->
+      <div class="flex flex-col w-full my-24 px-2 group">
+        <div class=" flex flex-col w-full items-center" data-aos="fade-down" data-aos-duration="1000">
+          <h1
+            class="my-4 text-2xl text-white font-semibold leading-tight text-center group-hover:text-3xl transition-all ease duration-500">
+            Some of things that I've been made
+          </h1>
+          <p class="text-xl mb-10">
+            #
+            <span class="bg-clip-text text-transparent bg-gradient-to-r from-sky-200  to-blue-400">
+              Dev
+            </span>
+            Journey
+          </p>
+          <div class="line w-1/2"></div>
+        </div>
+        <!-- Project 1 -->
+        <div class="flex flex-col w-full lg:w-4/5 my-10" data-aos="fade-left" data-aos-duration="1000">
+          <div class="grid grid-cols-1 lg:grid-cols-2 py-4">
+            <div class="px-4 overflow-hidden mb-2 lg:mb-0">
+              <img src="assets/images/project-1.png" alt="" srcset=""
+                class="hover:scale-110 transition-all ease-in-out duration-500 brightness-90">
+            </div>
+            <div class="flex flex-col w-full px-4">
+              <p class="text-2xl lg:text-4xl font-bold">Market place App</p>
+              <p class="my-2 font-light mb-5 text-sm">Build with: Laravel 10, VueJS, Bootstrap</p>
+              <p class="text-justify">Is an innovative marketplace application that connects sellers and buyers in one
+                practical and
+                efficient
+                platform. With a variety of features, one of which is a payment method through a 3rd party payment
+                gateway application, midtrans. So that it can provide convenience and security for users when making
+                transactions.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Project 2 -->
+        <div class="flex flex-col w-full lg:w-4/5 my-10 lg:ms-auto" data-aos="fade-right" data-aos-duration="1000">
+          <div class="grid grid-cols-1 lg:grid-cols-2 py-4">
+            <div class="px-4 overflow-hidden mb-2 lg:mb-0 lg:hidden">
+              <img src="assets/images/project-2.png" alt="" srcset=""
+                class="hover:scale-110 transition-all ease duration-500 brightness-90">
+            </div>
+            <div class="flex flex-col w-full px-4">
+              <p class="text-2xl lg:text-4xl font-bold">Siakad
+                Prestasi Prima</p>
+              <p class="my-2 font-light mb-5 text-sm">Build with: Laravel 10, Bootstrap</p>
+              <p class="text-justify">Siakad Prestasi Prima is an application that provides student attendance services
+                at Presatasi Prima
+                vocational high school, with a statistical
+                feature in the form of a diagram, which shows the percentage of student attendance. This application
+                is
+                designed to simplify and provide effective solutions in student attendance management.</p>
+            </div>
+            <div class="px-4 overflow-hidden mb-2 lg:mb-0 hidden lg:block">
+              <img src="assets/images/project-2.png" alt="" srcset=""
+                class="hover:scale-110 transition-all ease duration-500 brightness-90">
+            </div>
+          </div>
+        </div>
+        <!-- Project 3 -->
+        <div class="flex flex-col w-full lg:w-4/5 my-10" data-aos="fade-left" data-aos-duration="1000">
+          <div class="grid grid-cols-1 lg:grid-cols-2 py-4">
+            <div class="px-4 overflow-hidden mb-2 lg:mb-0">
+              <img src="assets/images/project-3.png" alt="" srcset=""
+                class="hover:scale-110 transition-all ease duration-500 brightness-90">
+            </div>
+            <div class="flex flex-col w-full px-4">
+              <p class="text-2xl lg:text-4xl font-bold">Game
+                Smart TK</p>
+              <p class="my-2 font-light mb-5 text-sm">Build with: Construct 2</p>
+              <p class="text-justify">Game Smart TK, is the result of our collaboration with Diginusa Kompas Gramedia
+                when i was an intern
+                there. In this game there are several games such as matching objects and so on. This game is
+                designed to provide education to kindergarten childrens.</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col w-full items-center mt-10">
+          <a href="https://github.com/Zilfs" target="_blank" class="btn-primary w-[300px]">
+            <i class="fa-brands fa-github me-2"></i>
+            Check out my GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills Section -->
+    <div class="flex flex-col w-full items-center px-4">
+      <h1
+        class="my-4 text-2xl text-white font-semibold leading-tight text-center-hover:text-3xl transition-all ease duration-500"
+        data-aos="fade-down" data-aos-duration="1000">
+        My Skills
+      </h1>
+      <div class="line w-1/5" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="100"></div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 my-24 px-4 w-full gap-10 justify-items-center">
+        <div class="grid grid-cols-1 w-full bg-dark bg-opacity-70 backdrop-blur-3xl rounded-lg p-10"
+          data-aos="fade-right" data-aos-duration="1000">
+          <div class="flex flex-col w-full">
+            <p class="text-3xl text-white">Front-End Development</p>
+            <div class="line"></div>
+            <p class="text-xl font-light">Building a seamless and user-friendly digital experience with a simple and
+              modern design</p>
+            <div class="flex flex-col w-full mt-16 px-5">
+              <p class="font-semibold my-2 text-lg">Abilities</p>
+              <div class="flex flex-wrap w-full my-2 align-middle font-normal text-sm text-white py-2 ">
+                <div class="flex flex-col items-center group transition-all ease-linear">
+                  <div class="flex">
+                    <p class="text-white">
+                      HTML</p>
+                    <p class="text-white mx-1">
+                      /</p>
+                    <p class="text-white">
+                      CSS</p>
+                  </div>
+                  <div
+                    class="flex opacity-0 group-hover:opacity-100 group-hover:translate-y-1 transition-all ease-linear duration-200">
+                    <i class="fa-brands fa-html5 text-xl mx-1 text-[#e34c26]"></i>
+                    <i class="fa-brands fa-css3-alt text-xl mx-1 text-[#2965f1]"></i>
+                  </div>
+                </div>
+                <div class="line w-[8px] mx-3 mt-[10px]"></div>
+                <div class="flex flex-col items-center group transition-all ease-linear">
+                  <div class="flex">
+                    <p class="text-white">
+                      Tailwind</p>
+                  </div>
+                  <div
+                    class="flex opacity-0 group-hover:opacity-100 group-hover:translate-y-1 transition-all ease-linear duration-200">
+                    <img src="assets/icons/tailwindcss-icon.svg" alt="" srcset="" class="w-[20px] mt-1">
+                  </div>
+                </div>
+                <div class="line w-[8px] mx-3 mt-[10px]"></div>
+                <div class="flex flex-col items-center group transition-all ease-linear">
+                  <div class="flex">
+                    <p class="text-white">
+                      Bootstrap</p>
+                  </div>
+                  <div
+                    class="flex opacity-0 group-hover:opacity-100 group-hover:translate-y-1 transition-all ease-linear duration-200">
+                    <i class="fa-brands fa-bootstrap text-[#6e2cf2] text-xl"></i>
+                  </div>
+                </div>
+                <div class="line w-[8px] mx-3 mt-[10px]"></div>
+                <div class="flex flex-col items-center group transition-all ease-linear">
+                  <div class="flex">
+                    <p class="text-white">
+                      JQuery</p>
+                  </div>
+                  <div
+                    class="flex opacity-0 group-hover:opacity-100 group-hover:translate-y-1 transition-all ease-linear duration-200">
+                    <img src="assets/icons/jquery-icon.png" alt="" srcset="" class="w-[25px] mt-1">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 w-full bg-dark bg-opacity-70 backdrop-blur-3xl rounded-lg p-10"
+          data-aos="fade-left" data-aos-duration="1000">
+          <div class="flex flex-col w-full">
+            <p class="text-3xl text-white">Back-End Development</p>
+            <div class="line"></div>
+            <p class="text-xl font-light">Building robust, scalable digital experiences with modern back-end
+              technologies and efficient</p>
+            <div class="flex flex-col w-full mt-16 px-5">
+              <p class="font-semibold my-2 text-lg">Abilities</p>
+              <div class="flex flex-wrap w-full my-2 align-middle font-normal text-sm text-white py-2 ">
+                <div class="flex flex-col items-center group transition-all ease-linear">
+                  <div class="flex">
+                    <p class="text-white">
+                      Laravel</p>
+                  </div>
+                  <div
+                    class="flex opacity-0 group-hover:opacity-100 group-hover:translate-y-1 transition-all ease-linear duration-200">
+                    <i class="fa-brands fa-laravel text-xl mt-1 text-[#f2382e]"></i>
+                  </div>
+                </div>
+                <div class="line w-[8px] mx-3 mt-[10px]"></div>
+                <div class="flex flex-col items-center group transition-all ease-linear">
+                  <div class="flex">
+                    <p class="text-white">
+                      MySQL</p>
+                  </div>
+                  <div
+                    class="flex opacity-0 group-hover:opacity-100 group-hover:translate-y-1 transition-all ease-linear duration-200">
+                    <img src="assets/icons/mysql-icon.png" alt="" srcset="" class="w-[45px] mt-1">
+                  </div>
+                </div>
+                <div class="line w-[8px] mx-3 mt-[10px]"></div>
+                <div class="flex flex-col items-center group transition-all ease-linear">
+                  <div class="flex">
+                    <p class="text-white">
+                      PHP</p>
+                  </div>
+                  <div
+                    class="flex opacity-0 group-hover:opacity-100 group-hover:translate-y-1 transition-all ease-linear duration-200">
+                    <img src="assets/icons/php-icon.png" alt="" srcset="" class="w-[32px] mt-2">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact section -->
+    <div class="flex flex-col w-full align-middle justify-center items-center">
+      <h1
+        class="my-4 text-2xl text-white font-semibold leading-tight text-center-hover:text-3xl transition-all ease duration-500"
+        data-aos="fade-down" data-aos-duration="1000">
+        Contact
+      </h1>
+      <div class="line w-1/5" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="100"></div>
+      <div class="grid grid-cols-1 gap-5 lg:grid-cols-2 my-24 group px-3 lg:px-14">
+        <div class="container" data-aos="fade-right" data-aos-duration="1000">
+          <spline-viewer hint loading-anim-type="spinner-small-light"
+            url="https://prod.spline.design/fqJAY502mo1f4XbX/scene.splinecode"></spline-viewer>
+        </div>
+        <div class="flex flex-col w-full bg-dark bg-opacity-70 backdrop-blur-3xl rounded-lg px-10 py-8"
+          data-aos="fade-left" data-aos-duration="1000">
+          <p class="text-2xl lg:text-4xl font-bold">Lets talk</p>
+          <div class="flex flex-row h-10 align-middle items-center my-4"><i class="fa-solid fa-envelope me-2"></i>
+            <p class="text-white">hirzi.dev@gmail.com</p>
+          </div>
+          <div class="flex w-full flex-col">
+            <form id="contact-form" class="flex flex-col w-full">
+              <input type="hidden" name="contact_number" value="697483">
+              <div class="grid grid-cols-1 gap-x-5 lg:grid-cols-2">
+                <div class="w-full my-2">
+                  <input type="text" name="user_name" id="senderName" placeholder="Your full name" required
+                    class="w-full h-12 bg-transparent placeholder:text-slate-400 text-white text-sm border border-slate-200 rounded-md px-3 my-1 pb-2 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-300 shadow-sm focus:shadow">
+                </div>
+                <div class="w-full my-2"> <input type="email" name="user_email" id="senderEmail"
+                    placeholder="Your email" required
+                    class="w-full h-12 bg-transparent placeholder:text-slate-400 text-white text-sm border border-slate-200 rounded-md px-3 my-1 pb-2 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-300 shadow-sm focus:shadow">
+                </div>
+              </div>
+              <div class="w-full my-2"> <input type="text" name="subject" id="subject" placeholder="Subject" required
+                  class="w-full h-12 bg-transparent placeholder:text-slate-400 text-white text-sm border border-slate-200 rounded-md px-3 my-1 pb-2 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-300 shadow-sm focus:shadow">
+              </div>
+              <div class="w-full my-2"><textarea name="message" id="messageSend"
+                  class="w-full h-24 bg-transparent placeholder:text-slate-400 text-white text-sm border border-slate-200 rounded-md px-3 my-1 pb-2 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-300 shadow-sm focus:shadow"
+                  placeholder="Your message" required></textarea></div>
+              <button type="submit" value="Send" class="w-full h-12 mt-1 mb-24rounded-md bg-[#229ebd]">Send</button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+    <!--Footer-->
+    <div class="flex flex-wrap w-full ps-14 mt-28 pt-16 pb-6 text-sm text-center md:text-left fade-in z-10 bottom-0">
+      <p class="text-gray-500 no-underline hover:no-underline" href="#">Copyright &copy; 2025. All rights reserved
+        -
+        App Made by HAR
+      </p>
+
+    </div>
+  </div>
+  </div>
+
+
+  <script src="assets/aos-master/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
