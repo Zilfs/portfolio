@@ -40,8 +40,14 @@
         emailjs.send('service_an5365w', 'template_m7b39vg', params)
           .then(() => {
             console.log('SUCCESS!');
+            alert("Your message has been sent successfully");
+            document.getElementById("senderName").value = "";
+            document.getElementById("senderEmail").value = "";
+            document.getElementById("subject").value = "";
+            document.getElementById("messageSend").value = "";
           }, (error) => {
             console.log('FAILED...', error);
+            alert("Something wrong, failed to send message");
           });
       });
     }
@@ -361,18 +367,18 @@
               <div class="grid grid-cols-1 gap-x-5 lg:grid-cols-2">
                 <div class="w-full my-2">
                   <input type="text" name="user_name" id="senderName" placeholder="Your full name" required
-                    class="w-full h-12 bg-transparent placeholder:text-slate-400 text-white text-sm border border-slate-200 rounded-md px-3 my-1 pb-2 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-300 shadow-sm focus:shadow">
+                    class="w-full h-12 bg-transparent placeholder:text-slate-400 text-white text-sm border border-slate-200 rounded-md px-3 my-1 p-2 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-300 shadow-sm focus:shadow">
                 </div>
                 <div class="w-full my-2"> <input type="email" name="user_email" id="senderEmail"
                     placeholder="Your email" required
-                    class="w-full h-12 bg-transparent placeholder:text-slate-400 text-white text-sm border border-slate-200 rounded-md px-3 my-1 pb-2 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-300 shadow-sm focus:shadow">
+                    class="w-full h-12 bg-transparent placeholder:text-slate-400 text-white text-sm border border-slate-200 rounded-md px-3 my-1 p-2 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-300 shadow-sm focus:shadow">
                 </div>
               </div>
               <div class="w-full my-2"> <input type="text" name="subject" id="subject" placeholder="Subject" required
-                  class="w-full h-12 bg-transparent placeholder:text-slate-400 text-white text-sm border border-slate-200 rounded-md px-3 my-1 pb-2 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-300 shadow-sm focus:shadow">
+                  class="w-full h-12 bg-transparent placeholder:text-slate-400 text-white text-sm border border-slate-200 rounded-md px-3 my-1 p-2 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-300 shadow-sm focus:shadow">
               </div>
               <div class="w-full my-2"><textarea name="message" id="messageSend"
-                  class="w-full h-24 bg-transparent placeholder:text-slate-400 text-white text-sm border border-slate-200 rounded-md px-3 my-1 pb-2 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-300 shadow-sm focus:shadow"
+                  class="w-full h-24 bg-transparent placeholder:text-slate-400 text-white text-sm border border-slate-200 rounded-md px-3 my-1 p-2 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-300 shadow-sm focus:shadow"
                   placeholder="Your message" required></textarea></div>
               <button type="submit" value="Send" class="w-full h-12 mt-1 mb-24rounded-md bg-[#229ebd]">Send</button>
             </form>
