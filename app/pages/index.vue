@@ -1,9 +1,36 @@
+<script setup>
+import Typed from "typed.js"
+import { onMounted, onBeforeUnmount, ref } from "vue"
+
+const typedEl = ref(null)
+let typedInstance
+
+onMounted(() => {
+  typedInstance = new Typed(typedEl.value, {
+    strings: [
+      "Frontend Developer",
+      "Backend Developer",
+      "Web Developer",
+      "Cyber Security Enthusiast"
+    ],
+    typeSpeed: 60,
+    backSpeed: 40,
+    backDelay: 1500,
+    loop: true
+  })
+})
+
+onBeforeUnmount(() => {
+  typedInstance.destroy()
+})
+</script>
+
 <template>
   <div>
     <UPageHero
     headline="Hii.. Im Hirzi "
       title="Software Engineer"
-      description="A production-ready starter template powered by Nuxt UI. Build beautiful, accessible, and performant applications in minutes, not hours."
+      description="I build modern, scalable web applications using Vue, React, Laravel, and Go—combining clean design, robust backend systems, and a passion for cybersecurity."
       :links="[{
         label: 'Linked-In',
         to: 'https://www.linkedin.com/in/hirzi-ahnaf/',
@@ -21,7 +48,16 @@
         color: 'neutral',
         variant: 'subtle'
       }]"
-    />
+    >
+    <template #headline>
+      <span class="text-2xl font-bold text-neutral">Hii.. Im Hirzi👋 </span>
+    </template>
+      <template #title>
+        <span class="text-4xl font-bold">
+          <span ref="typedEl" class="bg-clip-text text-transparent bg-gradient-to-r dark:from-sky-200 dark:to-blue-400 from-sky-400 to-blue-600"></span>
+        </span>
+      </template>
+    </UPageHero>
 
     <!-- <UPageSection
       id="features"
