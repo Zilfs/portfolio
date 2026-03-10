@@ -16,3 +16,14 @@
   --color-green-900: #0A5331;
   --color-green-950: #052E16;
 }
+
+#smooth-wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#smooth-content {
+  min-height: 100%;
+}

@@ -1,4 +1,16 @@
 <script setup>
+import { ScrollSmoother } from "gsap/ScrollSmoother";
+
+onMounted(() => {
+  ScrollSmoother.create({
+    wrapper: "#smooth-wrapper",
+    content: "#smooth-content",
+    smooth: 1,
+    effects: true,
+    smoothTouch: 0.1
+  })
+})
+
 useHead({
   meta: [
     { name: 'viewport', content: 'width=device-width, initial-scale=1' }
@@ -43,7 +55,14 @@ useSeoMeta({
     </UHeader>
 
     <UMain>
-      <NuxtPage />
+      <template>
+        <div id="smooth-wrapper">
+          <div id="smooth-content">
+            <NuxtPage />
+          </div>
+        </div>
+      </template>
+      
     </UMain>
 
     <USeparator icon="i-simple-icons-nuxtdotjs" />
