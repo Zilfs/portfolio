@@ -1,9 +1,9 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from "react"
-import { motion, AnimatePresence } from "framer-motion"
-import { useTheme } from "@/context/ThemeContext"
-import { FiSun, FiMoon, FiMenu, FiX } from "react-icons/fi"
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { useTheme } from "@/context/ThemeContext";
+import { FiSun, FiMoon, FiMenu, FiX } from "react-icons/fi";
 
 const navLinks = [
   { name: "Home", href: "#home" },
@@ -11,43 +11,43 @@ const navLinks = [
   { name: "Projects", href: "#projects" },
   { name: "Stack", href: "#stack" },
   { name: "Contact", href: "#contact" },
-]
+];
 
 export function Navbar() {
-  const { theme, toggleTheme } = useTheme()
-  const [isScrolled, setIsScrolled] = useState(false)
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
-  const [activeSection, setActiveSection] = useState("home")
+  const { theme, toggleTheme } = useTheme();
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("home");
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50)
+      setIsScrolled(window.scrollY > 50);
 
       // Detect active section
-      const sections = navLinks.map((link) => link.href.slice(1))
+      const sections = navLinks.map((link) => link.href.slice(1));
       for (const section of sections.reverse()) {
-        const element = document.getElementById(section)
+        const element = document.getElementById(section);
         if (element) {
-          const rect = element.getBoundingClientRect()
+          const rect = element.getBoundingClientRect();
           if (rect.top <= 100) {
-            setActiveSection(section)
-            break
+            setActiveSection(section);
+            break;
           }
         }
       }
-    }
+    };
 
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const handleNavClick = (href: string) => {
-    setIsMobileMenuOpen(false)
-    const element = document.querySelector(href)
+    setIsMobileMenuOpen(false);
+    const element = document.querySelector(href);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" })
+      element.scrollIntoView({ behavior: "smooth" });
     }
-  }
+  };
 
   return (
     <>
@@ -64,8 +64,8 @@ export function Navbar() {
           <motion.a
             href="#home"
             onClick={(e) => {
-              e.preventDefault()
-              handleNavClick("#home")
+              e.preventDefault();
+              handleNavClick("#home");
             }}
             className="relative group cursor-pointer"
             whileHover={{ scale: 1.05 }}
@@ -73,7 +73,7 @@ export function Navbar() {
           >
             <span className="font-mono text-2xl font-bold text-foreground">
               {"<"}
-              <span className="text-primary">YN</span>
+              <span className="text-primary">Hirzi's Portfolio</span>
               {"/>"}
             </span>
             <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
@@ -86,8 +86,8 @@ export function Navbar() {
                 key={link.name}
                 href={link.href}
                 onClick={(e) => {
-                  e.preventDefault()
-                  handleNavClick(link.href)
+                  e.preventDefault();
+                  handleNavClick(link.href);
                 }}
                 className={`relative font-mono text-sm transition-colors cursor-pointer ${
                   activeSection === link.href.slice(1)
@@ -179,8 +179,8 @@ export function Navbar() {
                   key={link.name}
                   href={link.href}
                   onClick={(e) => {
-                    e.preventDefault()
-                    handleNavClick(link.href)
+                    e.preventDefault();
+                    handleNavClick(link.href);
                   }}
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -199,5 +199,5 @@ export function Navbar() {
         )}
       </AnimatePresence>
     </>
-  )
+  );
 }
