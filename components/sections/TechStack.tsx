@@ -452,7 +452,7 @@ export function TechStack() {
         className="absolute inset-0 pointer-events-none"
         style={{
           backgroundImage:
-            "radial-gradient(circle, rgba(255,255,255,0.055) 1px, transparent 1px)",
+            "radial-gradient(circle, rgb(58, 58, 58) 1px, transparent 1px)",
           backgroundSize: "32px 32px",
         }}
       />
