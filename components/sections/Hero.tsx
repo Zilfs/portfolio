@@ -1,12 +1,12 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { TypeAnimation } from "react-type-animation"
-import { FaGithub, FaLinkedin } from "react-icons/fa"
-import { useMousePosition } from "@/hooks/useMousePosition"
+import { motion } from "framer-motion";
+import { TypeAnimation } from "react-type-animation";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { useMousePosition } from "@/hooks/useMousePosition";
 
 export function Hero() {
-  const mousePosition = useMousePosition()
+  const mousePosition = useMousePosition();
 
   return (
     <section
@@ -36,8 +36,14 @@ export function Hero() {
               top: `${Math.random() * 100}%`,
             }}
             animate={{
-              x: (mousePosition.x - window.innerWidth / 2) * 0.02 * (i % 3 + 1),
-              y: (mousePosition.y - window.innerHeight / 2) * 0.02 * (i % 3 + 1),
+              x:
+                (mousePosition.x - window.innerWidth / 2) *
+                0.02 *
+                ((i % 3) + 1),
+              y:
+                (mousePosition.y - window.innerHeight / 2) *
+                0.02 *
+                ((i % 3) + 1),
               scale: [1, 1.2, 1],
               opacity: [0.3, 0.6, 0.3],
             }}
@@ -98,8 +104,8 @@ export function Hero() {
 
           {/* Main heading */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6">
-            {"Hi, I'm "}
-            <span className="text-primary text-glow-cyan">Your Name</span>
+            {"Sup fellows, I'm "}
+            <span className="text-primary text-glow-cyan">Hirzi</span>
           </h1>
 
           {/* Typewriter effect */}
@@ -114,7 +120,7 @@ export function Hero() {
                   1500,
                   "Web Developer",
                   1500,
-                  "Cyber Security Enthusiast",
+                  "Linux Enthusiast",
                   1500,
                 ]}
                 wrapper="span"
@@ -143,7 +149,7 @@ export function Hero() {
             transition={{ delay: 3.4 }}
           >
             <motion.a
-              href="https://github.com"
+              href="https://github.com/Zilfs"
               target="_blank"
               rel="noopener noreferrer"
               className="group relative px-6 py-3 glass rounded-xl flex items-center gap-3 cursor-pointer overflow-hidden"
@@ -157,7 +163,7 @@ export function Hero() {
             </motion.a>
 
             <motion.a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/hirzi-ahnaf"
               target="_blank"
               rel="noopener noreferrer"
               className="group relative px-6 py-3 glass rounded-xl flex items-center gap-3 cursor-pointer overflow-hidden"
@@ -174,7 +180,7 @@ export function Hero() {
 
         {/* Scroll indicator */}
         <motion.div
-          className="absolute bottom-10 left-1/2 -translate-x-1/2"
+          className="absolute bottom-0 translate-y-20 left-1/2 -translate-x-1/2"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 4 }}
@@ -193,5 +199,5 @@ export function Hero() {
         </motion.div>
       </div>
     </section>
-  )
+  );
 }
