@@ -1,37 +1,37 @@
-"use client"
+"use client";
 
-import { motion, AnimatePresence } from "framer-motion"
-import { useState, useEffect } from "react"
+import { motion, AnimatePresence } from "framer-motion";
+import { useState, useEffect } from "react";
 
 interface SplashScreenProps {
-  onComplete: () => void
+  onComplete: () => void;
 }
 
 export function SplashScreen({ onComplete }: SplashScreenProps) {
-  const [progress, setProgress] = useState(0)
-  const [isVisible, setIsVisible] = useState(true)
+  const [progress, setProgress] = useState(0);
+  const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
     const interval = setInterval(() => {
       setProgress((prev) => {
         if (prev >= 100) {
-          clearInterval(interval)
-          return 100
+          clearInterval(interval);
+          return 100;
         }
-        return prev + 4
-      })
-    }, 80)
+        return prev + 4;
+      });
+    }, 80);
 
     const timer = setTimeout(() => {
-      setIsVisible(false)
-      setTimeout(onComplete, 500)
-    }, 2500)
+      setIsVisible(false);
+      setTimeout(onComplete, 500);
+    }, 2500);
 
     return () => {
-      clearInterval(interval)
-      clearTimeout(timer)
-    }
-  }, [onComplete])
+      clearInterval(interval);
+      clearTimeout(timer);
+    };
+  }, [onComplete]);
 
   return (
     <AnimatePresence>
@@ -77,10 +77,10 @@ export function SplashScreen({ onComplete }: SplashScreenProps) {
             className="relative"
           >
             <h1
-              className="glitch font-mono text-7xl md:text-9xl font-bold text-white tracking-wider"
-              data-text="YN"
+              className="glitch font-mono text-3xl md:text-7xl font-bold text-white tracking-wider"
+              data-text="Hirzi's Portfolio"
             >
-              YN
+              Hirzi's Portfolio
             </h1>
 
             {/* Cyber frame decoration */}
@@ -137,5 +137,5 @@ export function SplashScreen({ onComplete }: SplashScreenProps) {
         </motion.div>
       )}
     </AnimatePresence>
-  )
+  );
 }
