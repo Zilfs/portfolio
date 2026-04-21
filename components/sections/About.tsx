@@ -1,19 +1,12 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { useInView } from "framer-motion"
-import { useRef } from "react"
-
-const skills = [
-  { name: "Frontend Development", level: 90 },
-  { name: "Backend Development", level: 85 },
-  { name: "Cybersecurity", level: 80 },
-  { name: "Database Design", level: 85 },
-]
+import { motion } from "framer-motion";
+import { useInView } from "framer-motion";
+import { useRef } from "react";
 
 export function About() {
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, margin: "-100px" })
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
     <section
@@ -97,65 +90,14 @@ export function About() {
           >
             <div className="glass p-8 rounded-2xl">
               <p className="text-foreground/80 text-lg leading-relaxed mb-6">
-                {"I'm a passionate "}
-                <span className="text-primary font-semibold">
-                  full-stack developer
-                </span>
-                {" with a deep interest in "}
-                <span className="text-secondary font-semibold">
-                  cybersecurity
-                </span>
                 {
-                  ". I love building secure, scalable web applications that deliver exceptional user experiences."
+                  "Currently studying at Jakarta “Veterans” National Development University, majoring in Software Engineering. I am continuously developing my skills in web application and mobile application development. I also enjoy experimenting and tweaking Linux systems, and I have a strong interest in cybersecurity, where I actively learn about system security, vulnerabilities, and best practices in protecting digital systems "
                 }
               </p>
-              <p className="text-foreground/80 text-lg leading-relaxed mb-6">
-                {
-                  "With expertise spanning frontend frameworks to backend architectures, I bring ideas to life with clean, efficient code. Security isn't just an afterthought—it's embedded in everything I build."
-                }
-              </p>
-              <p className="text-foreground/80 text-lg leading-relaxed">
-                {
-                  "When I'm not coding, you'll find me exploring the latest in tech, contributing to open source, or diving into CTF challenges."
-                }
-              </p>
-            </div>
-
-            {/* Skill bars */}
-            <div className="mt-8 space-y-4">
-              {skills.map((skill, index) => (
-                <motion.div
-                  key={skill.name}
-                  initial={{ opacity: 0, x: 20 }}
-                  animate={isInView ? { opacity: 1, x: 0 } : {}}
-                  transition={{ duration: 0.4, delay: 0.6 + index * 0.1 }}
-                >
-                  <div className="flex justify-between mb-1">
-                    <span className="font-mono text-sm text-foreground/70">
-                      {skill.name}
-                    </span>
-                    <span className="font-mono text-sm text-primary">
-                      {skill.level}%
-                    </span>
-                  </div>
-                  <div className="h-2 bg-foreground/10 rounded-full overflow-hidden">
-                    <motion.div
-                      className="h-full bg-gradient-to-r from-primary to-secondary rounded-full"
-                      initial={{ width: 0 }}
-                      animate={isInView ? { width: `${skill.level}%` } : {}}
-                      transition={{
-                        duration: 1,
-                        delay: 0.8 + index * 0.1,
-                        ease: "easeOut",
-                      }}
-                    />
-                  </div>
-                </motion.div>
-              ))}
             </div>
           </motion.div>
         </div>
       </div>
     </section>
-  )
+  );
 }
